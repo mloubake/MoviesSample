@@ -18,9 +18,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         moviesRecyclerView = findViewById(R.id.movies_list)
-
-        println("mockedMoviesList $mockedMoviesList")
-
+        moviesRecyclerView.setHasFixedSize(true)
 
         moviesRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         moviesRecyclerView.adapter = MoviesAdapter(this, mockedMoviesList)
