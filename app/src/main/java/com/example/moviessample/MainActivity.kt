@@ -10,7 +10,7 @@ import com.example.moviessample.Data.MockedMovies
 import com.example.moviessample.Data.Movie
 
 class MainActivity : ComponentActivity() {
-    lateinit var freeToWatchRecyclerView: RecyclerView
+    lateinit var popularRecyclerView: RecyclerView
     lateinit var nowPlaytingRecyclerView: RecyclerView
     var mockedMoviesList: List<Movie> = MockedMovies().movies
 
@@ -19,10 +19,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        freeToWatchRecyclerView = findViewById(R.id.freeToWatch_list)
-        freeToWatchRecyclerView.setHasFixedSize(true)
-        freeToWatchRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        freeToWatchRecyclerView.adapter = MoviesAdapter(this, mockedMoviesList)
+        popularRecyclerView = findViewById(R.id.popular_list)
+        popularRecyclerView.setHasFixedSize(true)
+        popularRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        popularRecyclerView.adapter = MoviesAdapter(this, mockedMoviesList)
 
         nowPlaytingRecyclerView = findViewById(R.id.nowPlaying_list)
         nowPlaytingRecyclerView.setHasFixedSize(true)

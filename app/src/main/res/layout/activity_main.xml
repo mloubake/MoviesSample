@@ -10,7 +10,7 @@
     android:padding="12dp">
 
     <LinearLayout
-        android:id="@+id/freeToWatch_section"
+        android:id="@+id/popular_section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="20dp"
@@ -25,7 +25,7 @@
             android:textColor="@color/white"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/freeToWatch_list"
+            android:id="@+id/popular_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/purple_A200"/>
@@ -38,7 +38,7 @@
         android:layout_marginVertical="40dp"
         android:paddingVertical="20dp"
         android:orientation="vertical"
-        android:layout_below="@+id/freeToWatch_section"
+        android:layout_below="@+id/popular_section"
         android:background="@color/grey_900">
         <TextView
             android:layout_width="wrap_content"
