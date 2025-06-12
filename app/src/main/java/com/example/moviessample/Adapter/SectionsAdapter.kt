@@ -15,7 +15,7 @@ class SectionsAdapter(val context: Context, val sectionsList: List<Section>): Re
     }
 
     override fun onBindViewHolder(holder: SectionsViewholder, position: Int) {
-        holder.bind(sectionsList[position])
+        holder.bind(context, sectionsList[position])
     }
 
     override fun getItemCount(): Int {
