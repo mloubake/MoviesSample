@@ -4,9 +4,6 @@
     <!-- Material Design - Color Palette -->
     <!-- http://www.google.com/design/spec/style/color.html#color-color-palette -->
 
-    <!-- Purple -->
-    <color name="purple_200">#CE93D8</color>
-    <color name="purple_A200">#E040FB</color>
 
     <!-- Black & White -->
     <color name="black">#000000</color>

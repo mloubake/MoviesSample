@@ -13,14 +13,12 @@ class SectionsViewholder(context: Context, view: View): RecyclerView.ViewHolder(
     val sectionTitle: TextView
     val sectionPosters: RecyclerView
 
-
     init {
         sectionTitle = view.findViewById(R.id.section_title)
         sectionPosters = view.findViewById(R.id.poster_list)
 
         sectionPosters.setHasFixedSize(true)
         sectionPosters.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-
     }
 
 
